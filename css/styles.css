@@ -29,6 +29,9 @@
   /* FONT_FAMILY */
   --font_family: 'Montserrat', sans-serif;
   
+  /* RESETS */
+  --container: 1024px;
+  --section_separacion: 6.25rem;
 }
 
 *,
@@ -44,4 +47,57 @@ body {
   font-family: var(--font_family);
   background-color: #f5f5f5;
   margin: 0;
+}
+
+/* RESETS */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: var(--container_width);
+  margin: auto;
+}
+
+section {
+  padding-inline-end: var(--section_separacion);
+}
+
+.boton {
+  padding: 1rem 2rem;
+  font-size: var(--parrafo);
+  font-weight: var(--medium);
+  text-align: center;
+}
+
+.boton::before {
+  
+}
+
+.boton:hover {
+
+}
+
+.boton_amarillo {
+  background-color: var(--amarilloNerd);
+  color: var(--texto);
+}
+
+.boton_azul {
+  background-color: var(--azulNerd);
+  color: var(--texto);
+}
+
+.boton_verde {
+  background-color: var(--verdeNerd);
+  color: var(--texto);
+}
+
+.boton_rojo {
+  background-color: var(--rojoNerd);
+  color: var(--texto);
 }
