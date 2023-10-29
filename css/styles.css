@@ -1,4 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+:root {
+  /* COLORS */
+  --bg: #f5f5f5;
+  --texto: #130e01;
+  --rojoNerd: #ff1b02;
+  --amarilloNerd: #fcb100;
+  --azulNerd: #0194ff;
+  --verdeNerd: #01a7a3;
+
+  /* FONT SIZES */
+  --h1: 48px;
+  --titulo: 32px;
+  --subtitulo: 24px;
+  --parrafo: 18px;
+  --sub: 16px;
+  --small: 14px;
+
+  /* FONT WEIGHTS */
+  --bold: 700;
+  --semi_bold: 600;
+  --medium: 500;
+  --regular: 400;
+  --light: 300;
+  --extra_light: 200;
+  --thin: 100;
+
+  /* FONT_FAMILY */
+  --font_family: 'Montserrat', sans-serif;
+  
+}
 
 *,
 *::after,
@@ -6,18 +37,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-::root {
-  --bg: #f5f5f5;
-  --texto: #130e01;
-  --rojoNerd: #ff1b02;
-  --amarilloNerd: #fcb100;
-  --azulNerd: #0194ff;
-  --verdeNerd: #01a7a3;
+  scroll-behavior: smooth;
 }
 
 body {
+  font-family: var(--font_family);
   background-color: #f5f5f5;
-  font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
