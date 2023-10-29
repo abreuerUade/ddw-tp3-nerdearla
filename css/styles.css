@@ -10,6 +10,14 @@
   --azulNerd: #0194ff;
   --verdeNerd: #01a7a3;
 
+
+  --texto-hover: #130e01;
+  --texto_secundario: var(--bg);
+  --rojoNerd: #ff1b02;
+  --amarilloNerd: #fcb100;
+  --azulNerd: #0194ff;
+  --verdeNerd: #01a7a3;
+
   /* FONT SIZES */
   --h1: 48px;
   --titulo: 32px;
@@ -31,9 +39,10 @@
   --font_family: 'Montserrat', sans-serif;
   
   /* RESETS */
-  --container: 1024px;
+  --container_width: 1280px;
   --section_separacion: 6.25rem;
   --border_radius: 5px;
+  --shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 *,
@@ -61,7 +70,7 @@ ul {
 }
 
 .container {
-  max-width: var(--container_width);
+  width: var(--container_width);
   height: auto;
   margin: auto;
 }
@@ -70,19 +79,32 @@ section {
   padding-inline-end: var(--section_separacion);
 }
 
+/* BOTONES */
 .boton {
   padding: 1rem 2rem;
   font-size: var(--parrafo);
   font-weight: var(--medium);
   text-align: center;
-  position: relative;
   border: none;
   border-radius: var(--border_radius);
   cursor: pointer;
+  box-shadow: var(--shadow);
+  position: relative;
 }
 
-.boton:hover {
-  background-color: hsl(0, saturation, lightness);
+.boton::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--bg);
+  opacity: 0;
+  border-radius: var(--border_radius);
+  /* z-index: 1; */
+  transition: all 150ms ease-in-out;
+}
+
+.boton:hover::before {
+  opacity: 0.2;
 }
 
 .boton_amarillo {
@@ -102,5 +124,6 @@ section {
 
 .boton_rojo {
   background-color: var(--rojoNerd);
-  color: var(--texto);
+  color: var(--texto_secundario);
 }
+
