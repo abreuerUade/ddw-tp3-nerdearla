@@ -28,7 +28,7 @@
 
   /* FONT_FAMILY */
   --font_family: 'Montserrat', sans-serif;
-  
+
   /* RESETS */
   --container: 1024px;
   --section_separacion: 6.25rem;
@@ -75,11 +75,9 @@ section {
 }
 
 .boton::before {
-  
 }
 
 .boton:hover {
-
 }
 
 .boton_amarillo {
@@ -100,4 +98,34 @@ section {
 .boton_rojo {
   background-color: var(--rojoNerd);
   color: var(--texto);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--texto);
+  color: var(--bg);
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-logo img {
+  width: 20%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-links li {
+  text-decoration: none;
 }
