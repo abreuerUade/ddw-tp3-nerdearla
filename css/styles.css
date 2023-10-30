@@ -202,15 +202,6 @@ header {
   display: none;
 }
 
-
-
-
-
-
-
-
-
-
 /* FOOTER */
 /* FOOTER */
 /* FOOTER */
@@ -227,26 +218,32 @@ footer {
 .footer-top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
+  padding-block: 1rem;
 }
 
 .footer-logo {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   width: 33%;
 }
 
 .footer-logo img {
-  width: 10%;
+  width: 15%;
+  padding-right: 0.5rem;
 }
 
 .footer-links {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
+}
+
+.footer-links li {
+  padding-block: 0.5rem;
 }
 
 .footer-links li a {
@@ -257,18 +254,42 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid var(--amarilloNerd);
+  border-bottom: 1px solid var(--amarilloNerd);
 }
 
 form {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-block: 1rem;
+}
+
+form input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--border_radius);
+  outline: none;
+  margin-right: 0.5rem;
+  height: 2rem;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--border_radius);
+  outline: none;
+  background-color: var(--amarilloNerd);
+  color: var(--texto);
+  cursor: pointer;
+  height: 2rem;
 }
 
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-block: 2rem;
 }
 
 .footer-bottom p {
@@ -285,26 +306,17 @@ form {
   padding-inline: 1rem;
 }
 
-.footer-bottom ul li a i {
+.fa-brands {
+  font-size: 0.1rem;
+  padding: 5px;
   color: var(--texto_secundario);
-  width: 20px;
 }
 
-
-
-
-
-
-
-
-
-
-@media  (max-width: 768px) {
+@media (max-width: 768px) {
   /* INDEX */
   /* INDEX */
   /* INDEX */
-    
-    
+
   .menu-button {
     display: flex;
     background: transparent;
@@ -316,21 +328,12 @@ form {
   }
 
   .menu-button .menu .line {
-    transition:
-      y 200ms ease-in 200ms,
-      rotate 200ms ease-in,
-      opacity 0ms 200ms;
-    ;
+    transition: y 200ms ease-in 200ms, rotate 200ms ease-in, opacity 0ms 200ms;
     transform-origin: center;
   }
 
   .menu-button[aria-expanded='true'] .menu .line {
-    transition:
-      y 200ms ease-in,
-      rotate 200ms ease-in 200ms,
-      opacity 0ms 200ms;
-        
-    ;
+    transition: y 200ms ease-in, rotate 200ms ease-in 200ms, opacity 0ms 200ms;
   }
 
   .menu-button[aria-expanded='true'] .menu :is(.line_top, .line_bottom) {
@@ -368,7 +371,7 @@ form {
     transition: transform 350ms ease-out;
     transform: translateX(100%);
   }
-  
+
   .container_nav {
     width: auto;
   }
