@@ -857,25 +857,15 @@ header {
   font-weight: var(--bold);
   margin-top: 10px; 
   cursor: pointer;
+  transition: background-color 0.3s ease; 
 }
 
-#enviar:hover::before {
-  opacity: 0.8;
+#enviar:hover {
+  background-color: #fcb000c0; 
 }
 
-/* Media query para ajustar el diseño en pantallas más pequeñas */
-@media (max-width: 950px) {
-  .conectate-contenido-texto,
-  .conectate-contenido-formulario {
-    width: 100%; 
-  }
 
 
-
-  .conectate-contenido-texto { 
-    text-align: center;
-  }
-}
 
 
 /* FOOTER */
@@ -1297,6 +1287,17 @@ footer {
 
     .proximo_evento_tickets_llegar-span::before {
         display: none;
+    }
+
+    /* PAGE CONTACTO */
+    .conectate-contenido-texto,
+    .conectate-contenido-formulario {
+      width: 100%; 
+    }
+
+
+    .conectate-contenido-texto { 
+      text-align: center;
     }
 }
 
