@@ -1,15 +1,201 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script defer src="./js/script.js"></script>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script defer src="../js/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Nerdearla</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <!-- HEADER -->
+    <header>
+      <div class="container container_header">
+        <!-- LOGO -->
+        <div class="header_logo">
+          <a class="header_logo-link" href="#!">
+            <img
+              class="header_logo-img"
+              src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1698626125/DDW%20TPO%20FINAL/ab6761610000e5ebc68b8bc018158d66fd489877_stiipq-removebg-preview_p6swfd.png"
+              alt="Nerdearla Logo"
+            />
+          </a>
+        </div>
+        <!-- NAV -->
+        <div class="container_nav">
+          <!-- MENU HAMBURGUESA -->
+          <button
+            class="menu-button"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+            aria-label="menu"
+          >
+            <svg class="menu" viewBox="0 0 100 100" width="25">
+              <rect
+                class="line line_top"
+                width="80"
+                height="10"
+                x="10"
+                y="30"
+                rx="5"
+              ></rect>
+              <rect
+                class="line line_middle"
+                width="80"
+                height="10"
+                x="10"
+                y="50"
+                rx="5"
+              ></rect>
+              <rect
+                class="line line_bottom"
+                width="80"
+                height="10"
+                x="10"
+                y="70"
+                rx="5"
+              ></rect>
+            </svg>
+          </button>
+
+          <!-- NAV -->
+          <nav class="nav">
+            <ul
+              class="primary-navigation"
+              id="primary-navigation"
+              data-visible="false"
+            >
+              <li class="nav_item">
+                <a href="index.html" class="nav_link">Inicio</a>
+              </li>
+              <li class="nav_item">
+                <a href="#!" class="nav_link">Nosotros</a>
+              </li>
+              <li class="nav_item">
+                <a href="#!" class="nav_link">Charlas</a>
+              </li>
+              <li class="nav_item">
+                <a href="#!" class="nav_link">Contacto</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+
+    <section class="contacto">
+        <div class="contacto-contenido">
+            <h1>CONTACTANOS</h1>
+            <h4>Contáctanos para ayudarte. Esperamos tu mensaje.</h4>
+        </div>
+    </section>
+
+
+    <section class="conectate">
+      <div class="conectate-contenido-texto">
+          <h2>Conéctate con nosotros!</h2>
+          <p>En Nerdearla, estamos siempre dispuestos a escuchar y conectar con nuestra comunidad. Si tienes alguna consulta, sugerencia o simplemente deseas saludarnos, ¡no dudes en hacerlo! Nuestro equipo está comprometido con ofrecer una experiencia enriquecedora y responder a tus inquietudes en el menor tiempo posible. Utiliza el formulario adjunto o, si lo prefieres, escríbenos directamente a nuestro correo electrónico. ¡Estamos aquí para ayudarte y crecer juntos en este viaje de aprendizaje y pasión por la tecnología!</p>
+      </div>
+      <div class="conectate-contenido-formulario">
+          <input type="text" id="nombre" placeholder="Tu nombre" name="nombre">
+          <input type="email" id="email" placeholder="Email" name="email">
+          <input type="tel" id="numero" placeholder="Número de contacto" name="numero">
+          <input type="text" id="busqueda" placeholder="Contanos que estás buscando" name="busqueda">
+          <button id="enviar">Enviar</button>
+      </div>
+    </section>
+
+    </main>
+
+    <footer>
+      <div class="container container_footer">
+        <div class="col_footer footer-top">
+          <div class="col_footer_top footer-logo">
+            <img
+              src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1698626125/DDW%20TPO%20FINAL/ab6761610000e5ebc68b8bc018158d66fd489877_stiipq-removebg-preview_p6swfd.png"
+              alt=""
+            />
+            <h2>Nerdearla</h2>
+          </div>
+          <div class="col_footer_top footer-links">
+            <ul>
+              <li class="footer-links-titulo">Recursos</li>
+              <li><a href="#">Sponsors</a></li>
+              <li><a href="#">Stands Virtuales</a></li>
+              <li><a href="#">Búsquedas Laborales</a></li>
+              <li><a href="#">Comunidad</a></li>
+            </ul>
+          </div>
+          <div class="col_footer_top footer-links">
+            <ul>
+              <li class="footer-links-titulo">Legales</li>
+              <li><a href="#">Términos</a></li>
+              <li><a href="#">Preguntas Frecuentes</a></li>
+              <li><a href="#">Privacidad</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col_footer footer-mid">
+          <div class="footer_form_titulo">
+            <h3>¡Suscribite a nuestro Newsletter!</h3>
+          </div>
+          <form class="footer_form">
+            <input
+              type="email"
+              name="subscription"
+              placeholder="john_doe@mail.com"
+            />
+            <button class="boton boton_amarillo" type="submit">
+              Registrate
+            </button>
+          </form>
+        </div>
+        <div class="col_footer footer-bottom">
+          <p>&reg; 2023 Nerdearla</p>
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/nerdearla"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="red_social_1 fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/nerdearla"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="red_social_2 fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/nerdear_la/"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="red_social_3 fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/@nerdearla"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><i class="red_social_4 fa-brands fa-youtube"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
