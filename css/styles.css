@@ -1134,6 +1134,39 @@ footer {
   .speakers_card_subcards_container {
     width: 90%;
   }
+
+  
+  /* CONTACTO */
+  /* CONTACTO */
+  /* CONTACTO */
+
+  .contacto_info,
+  .contacto_form form {
+    padding-top: 2rem;
+  }
+
+  .contacto_form form {
+    gap: 3rem;
+  }
+
+  .contacto_info {
+    padding-right: 2rem;
+  }
+
+  .contacto_info::before {
+    width: 40%;
+    left: 5rem;
+    bottom: 3rem;
+  }
+
+
+  .contacto_form {
+    padding-inline: 2rem;
+  }
+
+  .contacto_form form :is(.nombre, .email, .numero, .busqueda) {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1312,6 +1345,35 @@ footer {
     display: none;
   }
 
+
+  /* CONTACTO */
+  /* CONTACTO */
+  /* CONTACTO */
+
+  .contacto_form form {
+    padding-top: 4rem;
+  }
+
+  .contacto_form form {
+    gap: 3rem;
+  }
+
+  .contacto_info {
+    padding-right: 2rem;
+  }
+
+  .contacto_info::before {
+    display: none;
+  }
+
+
+  .contacto_form {
+    padding-inline: 0rem;
+  }
+
+  .contacto_form form :is(.nombre, .email, .numero, .busqueda) {
+    width: 100%;
+  }
   
 }
 
@@ -1488,6 +1550,85 @@ footer {
   .speakers_card_subcard_img {
     width: 10%;
   }
+
+  /* CONTACTO */
+  /* CONTACTO */
+  /* CONTACTO */
+
+  .contacto_hero {
+    min-height: 40rem;
+    height: auto;
+    padding: 2rem;
+}
+
+  .contacto {
+    --col_width: 100%;
+    padding-inline: 2rem;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contacto_form form {
+    padding-top: 4rem;
+  }
+
+  .contacto_form form {
+    gap: 3rem;
+  }
+
+  .contacto_info {
+    padding-right: 2rem;
+  }
+
+  .contacto_info::before {
+    display: none;
+  }
+
+
+  .contacto_form {
+    padding-inline: 0rem;
+  }
+
+  .contacto_form form :is(.nombre, .email, .numero, .busqueda) {
+    width: 100%;
+  }
+
+
+  /* FOOTER */
+  /* FOOTER */
+  /* FOOTER */
+
+  .container_footer {
+    height: auto;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .footer-mid {
+    flex-direction: column;
+    padding-block: 2rem;
+    gap: 3rem;
+  }
+
+  .footer_form {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-bottom ul {
+    gap: 1rem;
+  }
+
 
 
 }
