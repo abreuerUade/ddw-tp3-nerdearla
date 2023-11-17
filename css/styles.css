@@ -1594,14 +1594,23 @@ footer {
     min-height: 40rem;
     height: auto;
     padding: 2rem;
-}
+    }
 
-  .contacto {
+    .contacto_hero-contenido h1 {
+        font-size: var(--titulo);
+        margin-bottom: 1rem;
+    }
+
+    .contacto_hero-contenido h4 {
+        font-size: var(--small);
+    }
+
+    .contacto {
     --col_width: 100%;
     padding-inline: 2rem;
     flex-direction: column;
     height: auto;
-  }
+    }
 
   .contacto_form form {
     padding-top: 4rem;
@@ -1610,6 +1619,8 @@ footer {
   .contacto_form form {
     gap: 3rem;
   }
+
+  
 
   .contacto_info {
     padding-right: 2rem;
@@ -1632,6 +1643,15 @@ footer {
   /* FOOTER */
   /* FOOTER */
   /* FOOTER */
+
+  .footer-logo {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .footer-bottom ul li {
+    padding-inline: 0rem;
+  }
 
   .container_footer {
     height: auto;
@@ -1664,6 +1684,11 @@ footer {
     gap: 1rem;
   }
 
+  .fa-brands {
+    font-size: 2rem;
+    padding: 5px;
+    color: var(--texto_secundario);
+  }
 
 
 }
