@@ -731,7 +731,7 @@ header {
 
 /* Estilo para la sección de contacto */
 
-.contacto {
+.contacto_hero {
   position: relative;
   /* Asegura que el pseudo-elemento sea relativo a este contenedor */
   width: 100%;
@@ -744,7 +744,7 @@ header {
   justify-content: center;
 }
 
-.contacto::before {
+.contacto_hero::before {
   content: "";
   position: absolute;
   top: 0;
@@ -754,124 +754,56 @@ header {
   background: rgba(19, 14, 1, 0.95);
 }
 
-.contacto-contenido {
+.contacto_hero-contenido {
   text-align: center;
   color: #F5F5F5;
   z-index: 1;
   position: relative;
 }
 
-.contacto-contenido h1 {
+.contacto_hero-contenido h1 {
   font-size: var(--h1);
 }
 
-.contacto-contenido h4 {
+.contacto_hero-contenido h4 {
   font-size: var(--sub);
   font-weight: var(--light);
 }
 
 
-/* Estilo para la sección Conéctate */
+/* CONTACTO */
+/* CONTACTO */
+/* CONTACTO */
 
-.conectate {
-  width: 100%;
-  height: 32rem;
-  display: flex;
-  flex-wrap: wrap;
-  padding-block-end: 0;
+.contacto {
+    --col_width: 50%;
+    padding-block-end: 0rem;
+    width: 100%;
+    height: 40rem;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3rem;
+    padding-inline: 5rem;
 }
 
-.conectate-contenido-texto {
-  text-align: left;
-  width: 50%;
-  height: 100%;
-  justify-content: center;
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  padding-inline: 6rem;
-  /* padding: 5%; */
+.contacto_info {
+    width: var(--col_width);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* gap: ; */
+    
 }
 
-.conectate-contenido-texto p {
-  margin-top: 30px;
-}
-
-.conectate-contenido-formulario {
-  /* padding: 2%; */
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  width: 50%;
-  height: 100%;
-  margin: auto;
-  align-items: flex-start;
-  padding: 0 10rem 3.5rem 6rem;
-}
-
-
-.conectate-contenido-formulario input {
-  background: transparent;
-  border: 2px solid;
-  padding: 15px;
-  width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 15px;
-  border-width: 4px;
-  outline: none;
-}
-
-
-#nombre {
-  border-color: var(--amarilloNerd);
-}
-
-#nombre::placeholder {
-  color: var(--amarilloNerd);
-}
-
-
-#email {
-  border-color: var(--azulNerd);
-}
-
-#email::placeholder {
-  color: var(--azulNerd);
-}
-
-#numero {
-  border-color: var(--verdeNerd);
-}
-
-#numero::placeholder {
-  color: var(--verdeNerd);
-}
-
-#busqueda {
-  border-color: var(--rojoNerd);
-}
-
-#busqueda::placeholder {
-  color: var(--rojoNerd);
-}
-
-
-#enviar {
-  border: none;
-  padding: 0.5rem 3rem;
-  background-color: var(--amarilloNerd);
-  color: var(--texto);
-  height: 2.5rem;
-  font-size: var(--sub);
-  font-weight: var(--bold);
-  margin-top: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#enviar:hover {
-  background-color: #fcb000c0;
+.contacto_form {
+    width: var(--col_width);
+    height: 100%;
+    display: flex;
+    
 }
 
 
@@ -1129,7 +1061,7 @@ footer {
   /* INDEX */
   /* INDEX */
 
-  .menu-button {
+    .menu-button {
     display: flex;
     background: transparent;
     border: none;
@@ -1137,40 +1069,39 @@ footer {
     cursor: pointer;
     z-index: 9999;
     place-items: center;
-  }
+    }
 
-  .menu-button .menu .line {
+    .menu-button .menu .line {
     transition: y 200ms ease-in 200ms, rotate 200ms ease-in, opacity 0ms 200ms;
     transform-origin: center;
-  }
+    }
 
-  .menu-button[aria-expanded='true'] .menu .line {
+    .menu-button[aria-expanded='true'] .menu .line {
     transition: y 200ms ease-in, rotate 200ms ease-in 200ms, opacity 0ms 200ms;
-  }
+    }
 
-  .menu-button[aria-expanded='true'] .menu :is(.line_top, .line_bottom) {
+    .menu-button[aria-expanded='true'] .menu :is(.line_top, .line_bottom) {
     y: 45;
-  }
+    }
 
-  .menu-button[aria-expanded='true'] .menu .line_top {
+    .menu-button[aria-expanded='true'] .menu .line_top {
     rotate: 45deg;
-  }
+    }
 
-  .menu-button[aria-expanded='true'] .menu .line_middle {
+    .menu-button[aria-expanded='true'] .menu .line_middle {
     opacity: 0;
-  }
+    }
 
-  .menu-button[aria-expanded='true'] .menu .line_bottom {
+    .menu-button[aria-expanded='true'] .menu .line_bottom {
     rotate: -45deg;
-  }
+    }
 
-  .menu {
-    fill: var(--texto);
-    /* color del menu hamburguesa */
+    .menu {
+    fill: var(--texto); /* color del menu hamburguesa */
     transition: fill 200ms;
-  }
+    }
 
-  .primary-navigation {
+    .primary-navigation {
     position: fixed;
     z-index: 100;
     inset: 0 0 0 50%;
@@ -1185,7 +1116,7 @@ footer {
 
     transition: transform 350ms ease-out;
     transform: translateX(100%);
-  }
+    }
 
   .container_nav {
     width: auto;
