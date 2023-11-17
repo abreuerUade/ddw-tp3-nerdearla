@@ -1120,60 +1120,60 @@ footer {
     /* INDEX */
 
     .menu-button {
-    display: flex;
-    background: transparent;
-    border: none;
-    border-radius: var(--border_radius_si);
-    cursor: pointer;
-    z-index: 9999;
-    place-items: center;
+      display: flex;
+      background: transparent;
+      border: none;
+      border-radius: var(--border_radius_si);
+      cursor: pointer;
+      z-index: 9999;
+      place-items: center;
     }
 
     .menu-button .menu .line {
-    transition: y 200ms ease-in 200ms, rotate 200ms ease-in, opacity 0ms 200ms;
-    transform-origin: center;
+      transition: y 200ms ease-in 200ms, rotate 200ms ease-in, opacity 0ms 200ms;
+      transform-origin: center;
     }
 
     .menu-button[aria-expanded='true'] .menu .line {
-    transition: y 200ms ease-in, rotate 200ms ease-in 200ms, opacity 0ms 200ms;
+      transition: y 200ms ease-in, rotate 200ms ease-in 200ms, opacity 0ms 200ms;
     }
 
     .menu-button[aria-expanded='true'] .menu :is(.line_top, .line_bottom) {
-    y: 45;
+      y: 45;
     }
 
     .menu-button[aria-expanded='true'] .menu .line_top {
-    rotate: 45deg;
+      rotate: 45deg;
     }
 
     .menu-button[aria-expanded='true'] .menu .line_middle {
-    opacity: 0;
+      opacity: 0;
     }
 
     .menu-button[aria-expanded='true'] .menu .line_bottom {
-    rotate: -45deg;
+      rotate: -45deg;
     }
 
     .menu {
-    fill: var(--texto); /* color del menu hamburguesa */
-    transition: fill 200ms;
+      fill: var(--texto); /* color del menu hamburguesa */
+      transition: fill 200ms;
     }
 
     .primary-navigation {
-    position: fixed;
-    z-index: 100;
-    inset: 0 0 0 50%;
-    /* background: hsl(0, 0%, 100% / 0.1);
-    backdrop-filter: blur(2rem); */
-    background-color: var(--texto);
-
-    flex-direction: column;
-    padding: min(30vh, 10rem) 2em;
-
-    gap: 2em;
-
-    transition: transform 350ms ease-out;
-    transform: translateX(100%);
+      position: fixed;
+      z-index: 100;
+      inset: 0 0 0 50%;
+      /* background: hsl(0, 0%, 100% / 0.1);
+      backdrop-filter: blur(2rem); */
+      background-color: var(--texto);
+      
+      flex-direction: column;
+      padding: min(30vh, 10rem) 2em;
+      
+      gap: 2em;
+      
+      transition: transform 350ms ease-out;
+      transform: translateX(100%);
     }
 
     .container_nav {
