@@ -84,9 +84,9 @@ ul {
 }
 
 .container_lg {
-    max-width: var(--container_lg_width);
-    margin: auto;
-    padding-inline: 5rem;
+  max-width: var(--container_lg_width);
+  margin: auto;
+  padding-inline: 5rem;
 }
 
 section {
@@ -188,7 +188,8 @@ header {
 
 .header_logo-img {
   width: var(--logo_width);
-  aspect-ratio: calc(var(--logo-width) / 52.53px); /* 76% */
+  aspect-ratio: calc(var(--logo-width) / 52.53px);
+  /* 76% */
 }
 
 .container_nav {
@@ -214,7 +215,7 @@ header {
 
 .nav_item {
   padding: 1.14rem 1.1rem;
-  
+
   transition: background-color 200ms ease-in-out;
 }
 
@@ -222,7 +223,7 @@ header {
   color: var(--texto);
   font-size: var(--sub);
   font-weight: var(--regular);
-  
+
   transition: color 150ms ease;
 }
 
@@ -231,7 +232,7 @@ header {
   cursor: pointer;
 }
 
-.nav_item:hover .nav_link{
+.nav_item:hover .nav_link {
   color: var(--bg);
 }
 
@@ -256,26 +257,26 @@ header {
 }
 
 .hero_container {
-    display: flex;
-    flex-wrap: wrap;
-    text-wrap: wrap;
-    /* align-items: center; */
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .hero_info-container {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-wrap: wrap;
-    /* align-items: center; */
-    justify-content: center;
-    gap: 15%;
-    text-align: start;
-    width: var(--hero_info_width);
-    height: 100%;
-    background-color: var(--texto);
-    /* padding-left: 5rem; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-wrap: wrap;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 15%;
+  text-align: start;
+  width: var(--hero_info_width);
+  height: 100%;
+  background-color: var(--texto);
+  /* padding-left: 5rem; */
 }
 
 .hero_info-container_2 {
@@ -320,8 +321,8 @@ header {
 }
 
 .hero_botones a:nth-child(2) {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .right_arrow {
@@ -339,388 +340,388 @@ header {
 }
 
 .sponsors_container {
-    height: 100%;
-    width: 100%;
-    border-block: 1px solid var(--texto);
-    padding: 1rem;
+  height: 100%;
+  width: 100%;
+  border-block: 1px solid var(--texto);
+  padding: 1rem;
 }
 
 .sponsors_list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .sponsors_list_link {
-    display: block;
+  display: block;
 }
 
 .sponsors_list_img {
-    width: 80%;
+  width: 80%;
 }
 
 
 
 /* VIVI NERDEARLA */
 .vivi_nerdearla {
-    width: 100%;
-    height: 30rem;
-    background-color: var(--bg);
+  width: 100%;
+  height: 30rem;
+  background-color: var(--bg);
 }
 
 .vivi_nerdearla_container {
-    --col_width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+  --col_width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .vivi_nerdearla_col:nth-child(1) {
-    width: var(--col_width);
-    height: 100%;
+  width: var(--col_width);
+  height: 100%;
 }
 
 .vivi_nerdearla_col:nth-child(2) {
-    width: calc(100% - var(--col_width));
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
+  width: calc(100% - var(--col_width));
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
 }
 
 .vivi_nerdearla_img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .vivi_nerdearla_titulo {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .vivi_nerdearla_titulo-texto {
-    text-align: center;
-    font-size: var(--titulo);
-    font-weight: var(--bold);
+  text-align: center;
+  font-size: var(--titulo);
+  font-weight: var(--bold);
 }
 
 .vivi_nerdearla_desc {
-    width: 75%;
-    height: auto;
+  width: 75%;
+  height: auto;
 }
 
 .vivi_nerdearla_desc-texto {
-    text-align: center;
-    line-height: 1.7;
-    font-size: var(--parrafo);
-    font-weight: var(--medium);
+  text-align: center;
+  line-height: 1.7;
+  font-size: var(--parrafo);
+  font-weight: var(--medium);
 }
 
 .vivi_nerdearla_botones {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .vivi_nerdearla_botones a {
-    border-radius: var(--border_radius_no);
+  border-radius: var(--border_radius_no);
 }
 
 
 /* PROXIMO EVENTO */
 .proximo_evento {
-    width: 100%;
-    height: 50rem;
-    background: linear-gradient(103.33deg, #01A7A3 39.06%, #0194FF 100%);
-    padding-block: 3rem;
+  width: 100%;
+  height: 50rem;
+  background: linear-gradient(103.33deg, #01A7A3 39.06%, #0194FF 100%);
+  padding-block: 3rem;
 }
 
 .proximo_evento * {
-    color: var(--texto_secundario);
+  color: var(--texto_secundario);
 }
 
 .proximo_evento_container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .proximo_evento_titulo {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .proximo_evento_titulo-texto {
-    text-align: center;
-    font-size: var(--titulo);
-    font-weight: var(--bold);
+  text-align: center;
+  font-size: var(--titulo);
+  font-weight: var(--bold);
 }
 
 .proximo_evento_card {
-    --img_width: 20%;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  --img_width: 20%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .proximo_evento_card_img {
-    width: var(--img_width);
-    height: 100%;
+  width: var(--img_width);
+  height: 100%;
 }
 
 .proximo_evento_card_img-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .proximo_evento_card_info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    width: calc(100% - var(--img_width));
-    height: 100%;
-    padding-inline: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: calc(100% - var(--img_width));
+  height: 100%;
+  padding-inline: 1rem;
 }
 
 .proximo_evento_card_titulo {
-    font-size: var(--subtitulo);
-    font-weight: var(--bold);
+  font-size: var(--subtitulo);
+  font-weight: var(--bold);
 }
 
 .proximo_evento_card_desc {
-    font-size: var(--sub);
-    font-weight: var(--regular);
+  font-size: var(--sub);
+  font-weight: var(--regular);
 }
 
 .proximo_evento_card_ubicacion,
 .proximo_evento_card_fecha {
-    width: 100%;
-    height: auto;
-    display: flex;
-    gap: 1rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  gap: 1rem;
 }
 
 .proximo_evento_card_ubicacion-img,
 .proximo_evento_card_fecha-img {
-    width: 20px;
-    aspect-ratio: 1;
+  width: 20px;
+  aspect-ratio: 1;
 }
 
 .proximo_evento_card_ubicacion-texto,
 .proximo_evento_card_fecha-texto {
-    font-size: var(--small);
-    font-weight: var(--bold);
+  font-size: var(--small);
+  font-weight: var(--bold);
 }
 
 .proximo_evento_tickets {
-    --width_img_div: 23%;
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  --width_img_div: 23%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .proximo_evento_tickets_img {
-    width: var(--width_img_div);
-    aspect-ratio: 1;
-    /* height: 100%; */
+  width: var(--width_img_div);
+  aspect-ratio: 1;
+  /* height: 100%; */
 }
 
 .proximo_evento_tickets_img-img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .proximo_evento_tickets_info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: calc(100% - var(--width_img_div));
-    height: 100%;
-    padding-block: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - var(--width_img_div));
+  height: 100%;
+  padding-block: 1rem;
 }
 
 .proximo_evento_tickets_titulo {
-    font-size: var(--subtitulo);
-    font-weight: var(--bold);
+  font-size: var(--subtitulo);
+  font-weight: var(--bold);
 }
 
 .proximo_evento_tickets_info a {
-    border-radius: var(--border_radius_no);
-    font-size: var(--sub);
-    font-weight: var(--semi_bold);
+  border-radius: var(--border_radius_no);
+  font-size: var(--sub);
+  font-weight: var(--semi_bold);
 }
 
 .proximo_evento_tickets_llegar,
 .proximo_evento_tickets_llegar-span {
-    font-size: var(--sub);
-    font-weight: var(--semi_bold);
+  font-size: var(--sub);
+  font-weight: var(--semi_bold);
 }
 
 .proximo_evento_tickets_llegar-span {
-    background-color: var(--amarilloNerd);
-    padding-block: 0.5rem;
-    position: relative;
+  background-color: var(--amarilloNerd);
+  padding-block: 0.5rem;
+  position: relative;
 }
 
 .proximo_evento_tickets_llegar-span::before {
-    content: '';
-    position: absolute;
-    /* inset: 0; */
-    background-image: url(../images/arrow_proximo_evento.png);
-    background-repeat: no-repeat;
-    width: 100px;
-    aspect-ratio: 3.33;
-    right: -7.5rem;
-    bottom: 0.3rem;
+  content: '';
+  position: absolute;
+  /* inset: 0; */
+  background-image: url(../images/arrow_proximo_evento.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  aspect-ratio: 3.33;
+  right: -7.5rem;
+  bottom: 0.3rem;
 }
 
 
 .speakers {
-    width: 100%;
-    height: auto;
-    background-color: var(--bg);
+  width: 100%;
+  height: auto;
+  background-color: var(--bg);
 }
 
 .speakers_container {
-    width: 100%;
-    height: 100%;
-    padding-block: 3rem;
+  width: 100%;
+  height: 100%;
+  padding-block: 3rem;
 }
 
 .speakers_titulo {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .speakers_titulo-texto {
-    font-size: var(--titulo);
-    font-weight: var(--bold);
-    text-align: center;
+  font-size: var(--titulo);
+  font-weight: var(--bold);
+  text-align: center;
 }
 
 .speakers_container_cards {
-    --card_gap: 6rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: var(--card_gap);
-    place-items: center;
-    padding-block-start: 3rem;
-    width: 100%;
-    height: 100%;
+  --card_gap: 6rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: var(--card_gap);
+  place-items: center;
+  padding-block-start: 3rem;
+  width: 100%;
+  height: 100%;
 }
 
 .speakers_card {
-    --width_img: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    border-block: 1px dotted var(--texto);
+  --width_img: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  border-block: 1px dotted var(--texto);
 }
 
 .speakers_card_img {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    width: var(--width_img);
-    height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: var(--width_img);
+  height: 100%;
 }
 
 .speakers_card_img-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .speakers_card_info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 5.5rem;
-    width: calc(100% - var(--width_img));
-    height: 100%;
-    /* padding-right: 10rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 5.5rem;
+  width: calc(100% - var(--width_img));
+  height: 100%;
+  /* padding-right: 10rem; */
 }
 
 .speakers_card_nombre,
 .speakers_card_desc,
 .speakers_card_subcards_container {
-    width: 70%;
+  width: 70%;
 }
 
 .speakers_card_nombre {
-    font-size: var(--titulo);
-    font-weight: var(--bold);
-    align-items: start;
+  font-size: var(--titulo);
+  font-weight: var(--bold);
+  align-items: start;
 }
 
 .speakers_card_desc {
-    font-size: var(--sub);
-    font-weight: var(--medium);
-    align-items: start;
+  font-size: var(--sub);
+  font-weight: var(--medium);
+  align-items: start;
 }
 
 .speakers_card_subcards_container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 2rem;
-    height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  height: auto;
 }
 
 .speakers_card_subcard {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 1rem;
-    width: 40%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  width: 40%;
+  height: 100%;
 }
 
 .speakers_card_subcard_img {
-    width: 20%;
+  width: 20%;
 }
 
 .speakers_card_subcard_titulo {
-    font-size: var(--parrafo);
-    font-weight: var(--semi_bold);
-    text-align: center;
+  font-size: var(--parrafo);
+  font-weight: var(--semi_bold);
+  text-align: center;
 }
 
 .speakers_card_subcard_desc {
-    font-size: var(--sub);
-    font-weight: var(--regular);
-    text-align: center;
+  font-size: var(--sub);
+  font-weight: var(--regular);
+  text-align: center;
 }
 
 
 
 
 .speakers_card_info a {
-    display: flex;
-    gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 /* CONTACTO */
@@ -731,15 +732,16 @@ header {
 /* Estilo para la sección de contacto */
 
 .contacto {
-  position: relative; /* Asegura que el pseudo-elemento sea relativo a este contenedor */
+  position: relative;
+  /* Asegura que el pseudo-elemento sea relativo a este contenedor */
   width: 100%;
   height: 40rem;
   display: flex;
   background-image: url("../images/image_bg_hero.png");
-  background-size: cover; 
-  background-position: center; 
-  align-items: center; 
-  justify-content: center; 
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .contacto::before {
@@ -753,9 +755,9 @@ header {
 }
 
 .contacto-contenido {
-  text-align: center; 
+  text-align: center;
   color: #F5F5F5;
-  z-index: 1; 
+  z-index: 1;
   position: relative;
 }
 
@@ -773,42 +775,49 @@ header {
 
 .conectate {
   width: 100%;
-  height: auto;
+  height: 32rem;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
+  padding-block-end: 0;
 }
 
-.conectate-contenido-texto { 
+.conectate-contenido-texto {
   text-align: left;
-  width: 40%;
+  width: 50%;
   height: 100%;
-  padding: 5%;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 6rem;
+  /* padding: 5%; */
 }
 
 .conectate-contenido-texto p {
-  margin-top: 30px; 
+  margin-top: 30px;
 }
 
 .conectate-contenido-formulario {
-  padding: 8%;
+  /* padding: 2%; */
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 60%;
+  justify-content: end;
+  width: 50%;
   height: 100%;
-  margin: auto; 
+  margin: auto;
   align-items: flex-start;
+  padding: 0 10rem 3.5rem 6rem;
 }
 
 
 .conectate-contenido-formulario input {
-  background: transparent; 
+  background: transparent;
   border: 2px solid;
-  padding: 15px; 
-  width: 100%; 
-  box-sizing: border-box; 
-  margin-bottom: 15px; 
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
   border-width: 4px;
   outline: none;
 }
@@ -856,13 +865,13 @@ header {
   height: 2.5rem;
   font-size: var(--sub);
   font-weight: var(--bold);
-  margin-top: 10px; 
+  margin-top: 10px;
   cursor: pointer;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 }
 
 #enviar:hover {
-  background-color: #fcb000c0; 
+  background-color: #fcb000c0;
 }
 
 
@@ -925,7 +934,8 @@ footer {
 
 .footer-logo img {
   width: var(--logo_width);
-  aspect-ratio: calc(var(--logo-width) / 52.53px); /* 76% */
+  aspect-ratio: calc(var(--logo-width) / 52.53px);
+  /* 76% */
 }
 
 .footer-logo h2 {
@@ -1069,57 +1079,57 @@ footer {
 /* MEDIA QUERIES */
 
 @media (max-width: 1440px) {
-    .hero {
-        --hero_info_width: 45%;
-    }
+  .hero {
+    --hero_info_width: 45%;
+  }
 
-    .hero_botones {
-        gap: 2rem;
-    }
+  .hero_botones {
+    gap: 2rem;
+  }
 }
 
 @media (max-width: 1024px) {
-    .hero {
-        --hero_info_width: 60%;
-    }
+  .hero {
+    --hero_info_width: 60%;
+  }
 
-    .vivi_nerdearla_botones {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-    
-    .vivi_nerdearla_botones a {
-        border-radius: var(--border_radius_no);
-        padding: 1rem 3rem;
-    }
+  .vivi_nerdearla_botones {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-    .vivi_nerdearla_desc-texto {
-        line-height: 1.5;
-    }
-    
-    .speakers_card {
-        --width_img: 50%;
-    }
-    
-    .speakers_card_info {
-        gap: 2rem;
-    }
+  .vivi_nerdearla_botones a {
+    border-radius: var(--border_radius_no);
+    padding: 1rem 3rem;
+  }
 
-    .speakers_card_nombre,
-    .speakers_card_desc,
-    .speakers_card_subcards_container {
-        width: 90%;
-    }
+  .vivi_nerdearla_desc-texto {
+    line-height: 1.5;
+  }
+
+  .speakers_card {
+    --width_img: 50%;
+  }
+
+  .speakers_card_info {
+    gap: 2rem;
+  }
+
+  .speakers_card_nombre,
+  .speakers_card_desc,
+  .speakers_card_subcards_container {
+    width: 90%;
+  }
 }
 
 @media (max-width: 768px) {
-    /* INDEX */
-    /* INDEX */
-    /* INDEX */
+  /* INDEX */
+  /* INDEX */
+  /* INDEX */
 
-    .menu-button {
+  .menu-button {
     display: flex;
     background: transparent;
     border: none;
@@ -1127,39 +1137,40 @@ footer {
     cursor: pointer;
     z-index: 9999;
     place-items: center;
-    }
+  }
 
-    .menu-button .menu .line {
+  .menu-button .menu .line {
     transition: y 200ms ease-in 200ms, rotate 200ms ease-in, opacity 0ms 200ms;
     transform-origin: center;
-    }
+  }
 
-    .menu-button[aria-expanded='true'] .menu .line {
+  .menu-button[aria-expanded='true'] .menu .line {
     transition: y 200ms ease-in, rotate 200ms ease-in 200ms, opacity 0ms 200ms;
-    }
+  }
 
-    .menu-button[aria-expanded='true'] .menu :is(.line_top, .line_bottom) {
+  .menu-button[aria-expanded='true'] .menu :is(.line_top, .line_bottom) {
     y: 45;
-    }
+  }
 
-    .menu-button[aria-expanded='true'] .menu .line_top {
+  .menu-button[aria-expanded='true'] .menu .line_top {
     rotate: 45deg;
-    }
+  }
 
-    .menu-button[aria-expanded='true'] .menu .line_middle {
+  .menu-button[aria-expanded='true'] .menu .line_middle {
     opacity: 0;
-    }
+  }
 
-    .menu-button[aria-expanded='true'] .menu .line_bottom {
+  .menu-button[aria-expanded='true'] .menu .line_bottom {
     rotate: -45deg;
-    }
+  }
 
-    .menu {
-    fill: var(--texto); /* color del menu hamburguesa */
+  .menu {
+    fill: var(--texto);
+    /* color del menu hamburguesa */
     transition: fill 200ms;
-    }
+  }
 
-    .primary-navigation {
+  .primary-navigation {
     position: fixed;
     z-index: 100;
     inset: 0 0 0 50%;
@@ -1174,307 +1185,307 @@ footer {
 
     transition: transform 350ms ease-out;
     transform: translateX(100%);
-    }
+  }
 
-    .container_nav {
+  .container_nav {
     width: auto;
-    }
+  }
 
-    .container_nav nav .primary-navigation {
+  .container_nav nav .primary-navigation {
     align-items: flex-start;
     justify-content: flex-start;
-    }
+  }
 
-    .primary-navigation[data-visible='true'] {
+  .primary-navigation[data-visible='true'] {
     transform: translateX(0%);
-    }
+  }
 
-    .nav_link {
+  .nav_link {
     color: var(--bg);
     font-size: var(--parrafo);
     font-weight: var(--medium);
-    }
+  }
 
-    .nav_item {
+  .nav_item {
     width: 100%;
-    }
+  }
 
-    .nav_item:hover {
+  .nav_item:hover {
     background-color: var(--bg);
-    }
+  }
 
-    .nav_item:hover .nav_link {
+  .nav_item:hover .nav_link {
     color: var(--texto);
-    }
+  }
 
-    .speakers_card {
-        flex-direction: column-reverse;
-        gap: 3rem;
-        width: 100%;
-        height: 100%;
-    }
+  .speakers_card {
+    flex-direction: column-reverse;
+    gap: 3rem;
+    width: 100%;
+    height: 100%;
+  }
 
-    .speakers_card {
-        --width_img: 10%;
-        border-block: none;
-    }
+  .speakers_card {
+    --width_img: 10%;
+    border-block: none;
+  }
 
-    
 
-    .speakers_card_img {
-        width: 100%;
-        height: 30rem;
-    }
 
-    .speakers_card_info {
-        width: 100%;
-        height: calc(100% - var(--width_img));
-    }
-    
-    .hero {
-        --hero_info_width: 100%;
-    }
+  .speakers_card_img {
+    width: 100%;
+    height: 30rem;
+  }
 
-    .hero_info-container {
-        align-items: center;
-    }
+  .speakers_card_info {
+    width: 100%;
+    height: calc(100% - var(--width_img));
+  }
 
-    .hero_info-container_2 {
-        display: none;
-    }
+  .hero {
+    --hero_info_width: 100%;
+  }
 
-    .vivi_nerdearla_container {
-        --col_width: 40%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        padding-inline: 0;
-    }
+  .hero_info-container {
+    align-items: center;
+  }
 
-    .vivi_nerdearla_botones a {
-        border-radius: var(--border_radius_no);
-        padding: 1rem 2rem;
-    }
+  .hero_info-container_2 {
+    display: none;
+  }
 
-    .vivi_nerdearla_desc-texto {
-        font-size: var(--sub);
-    }
+  .vivi_nerdearla_container {
+    --col_width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0;
+  }
 
-    /* .proximo_evento {
+  .vivi_nerdearla_botones a {
+    border-radius: var(--border_radius_no);
+    padding: 1rem 2rem;
+  }
+
+  .vivi_nerdearla_desc-texto {
+    font-size: var(--sub);
+  }
+
+  /* .proximo_evento {
         height: 50rem;
     } */
 
-    .proximo_evento_tickets_info {
-        justify-content: center;
-        gap: 1rem;
-    }
+  .proximo_evento_tickets_info {
+    justify-content: center;
+    gap: 1rem;
+  }
 
-    .proximo_evento_tickets {
-        flex-direction: column;
-        justify-content: center;
-        gap: 3rem;
-    }
+  .proximo_evento_tickets {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
 
-    .proximo_evento_tickets_info {
-        width: 100%;
-    }
+  .proximo_evento_tickets_info {
+    width: 100%;
+  }
 
-    .proximo_evento_tickets_img {
-        width: 100%;
-        aspect-ratio: 0;
-    }
+  .proximo_evento_tickets_img {
+    width: 100%;
+    aspect-ratio: 0;
+  }
 
-    .proximo_evento_tickets_llegar-span::before {
-        display: none;
-    }
+  .proximo_evento_tickets_llegar-span::before {
+    display: none;
+  }
 
-    /* PAGE CONTACTO */
-    .conectate-contenido-texto,
-    .conectate-contenido-formulario {
-      width: 100%; 
-    }
+  /* PAGE CONTACTO */
+  .conectate-contenido-texto,
+  .conectate-contenido-formulario {
+    width: 100%;
+  }
 
 
-    .conectate-contenido-texto { 
-      text-align: center;
-    }
+  .conectate-contenido-texto {
+    text-align: center;
+  }
 }
 
 @media (max-width: 425px) {
-    .primary-navigation {
-        inset: 0 0 0 20%;
-    }
+  .primary-navigation {
+    inset: 0 0 0 20%;
+  }
 
-    .hero_info-container {
-        padding-inline: 0rem;
-    }
+  .hero_info-container {
+    padding-inline: 0rem;
+  }
 
-    .hero_botones a {
-        padding: 1rem 2rem;
-    }
+  .hero_botones a {
+    padding: 1rem 2rem;
+  }
 
-    .hero_subtitle {
-        text-align: center;
-    }
-    
-    .sponsors_container {
-        padding: 0.5rem 0rem;
-    }
+  .hero_subtitle {
+    text-align: center;
+  }
 
-    .sponsors_list {
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        column-gap: 1rem;
-        place-items: center;
-    }
+  .sponsors_container {
+    padding: 0.5rem 0rem;
+  }
 
-    .sponsors_list_img {
-        width: 100%;
-    }
+  .sponsors_list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1rem;
+    place-items: center;
+  }
 
-    .vivi_nerdearla {
-        height: auto;
-    }
+  .sponsors_list_img {
+    width: 100%;
+  }
 
-    .vivi_nerdearla_container {
-        flex-direction: column;
-        justify-content: center;
-        gap: 2rem;
-        /* height: 100%; */
-    }
+  .vivi_nerdearla {
+    height: auto;
+  }
 
-    .vivi_nerdearla_col:nth-child(1) {
-        width: 100%;
-        height: 50%;
-    }
+  .vivi_nerdearla_container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    /* height: 100%; */
+  }
 
-    .vivi_nerdearla_col:nth-child(2) {
-        width: 100%;
-        height: 50%;
-        gap: 2rem;
-    }
+  .vivi_nerdearla_col:nth-child(1) {
+    width: 100%;
+    height: 50%;
+  }
 
-    .vivi_nerdearla_desc {
-        width: 100%;
-    }
+  .vivi_nerdearla_col:nth-child(2) {
+    width: 100%;
+    height: 50%;
+    gap: 2rem;
+  }
 
-    .vivi_nerdearla_titulo-texto,
-    .vivi_nerdearla_desc-texto {
-        text-align: start;
-    }
+  .vivi_nerdearla_desc {
+    width: 100%;
+  }
 
-    .vivi_nerdearla_botones {
-        justify-content: space-between;
-    }
+  .vivi_nerdearla_titulo-texto,
+  .vivi_nerdearla_desc-texto {
+    text-align: start;
+  }
 
-    .vivi_nerdearla_botones a {
-        padding: 1rem 1rem;
-    }
+  .vivi_nerdearla_botones {
+    justify-content: space-between;
+  }
 
-    .proximo_evento {
-        height: auto;
-    }
+  .vivi_nerdearla_botones a {
+    padding: 1rem 1rem;
+  }
 
-    .proximo_evento_container {
-        gap: 4rem;
-    }
+  .proximo_evento {
+    height: auto;
+  }
 
-    .proximo_evento_card {
-        flex-direction: column;
-        gap: 2rem;
-    }
+  .proximo_evento_container {
+    gap: 4rem;
+  }
 
-    .proximo_evento_card_img {
-        width: 40%;
-    }
+  .proximo_evento_card {
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-    .proximo_evento_card_info {
-        width: 100%;
-        justify-content: center;
-        gap: 1.5rem;
-    }
+  .proximo_evento_card_img {
+    width: 40%;
+  }
 
-    .proximo_evento_titulo-texto {
-        font-size: var(--subtitulo);
-    }
+  .proximo_evento_card_info {
+    width: 100%;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 
-    .proximo_evento_card_titulo {
-        width: 100%;
-        font-size: var(--parrafo);
-        text-align: center;
-    }
+  .proximo_evento_titulo-texto {
+    font-size: var(--subtitulo);
+  }
 
-    .proximo_evento_card_desc {
-        width: 100%;
-        text-align: center;
-    }
+  .proximo_evento_card_titulo {
+    width: 100%;
+    font-size: var(--parrafo);
+    text-align: center;
+  }
 
-    .proximo_evento_card_ubicacion,
-    .proximo_evento_card_fecha {
-        width: 100%;
-        padding-left: 2rem;
-    }
+  .proximo_evento_card_desc {
+    width: 100%;
+    text-align: center;
+  }
 
-    .proximo_evento_card_ubicacion-texto,
-    .proximo_evento_card_fecha-texto {
-        font-weight: var(--medium);
-    }
+  .proximo_evento_card_ubicacion,
+  .proximo_evento_card_fecha {
+    width: 100%;
+    padding-left: 2rem;
+  }
 
-    .proximo_evento_tickets_info {
-        gap: 2rem;
-    }
+  .proximo_evento_card_ubicacion-texto,
+  .proximo_evento_card_fecha-texto {
+    font-weight: var(--medium);
+  }
 
-    .proximo_evento_tickets_llegar {
-        display: none;
-    }
+  .proximo_evento_tickets_info {
+    gap: 2rem;
+  }
 
-    .proximo_evento_tickets_titulo {
-        font-size: var(--parrafo);
-        width: 100%;
-        text-align: center;
-    }
+  .proximo_evento_tickets_llegar {
+    display: none;
+  }
 
-    .speakers_container {
-        padding-inline: 0rem;
-    }
+  .proximo_evento_tickets_titulo {
+    font-size: var(--parrafo);
+    width: 100%;
+    text-align: center;
+  }
 
-    .speakers_card_info {
-        padding-inline: 2rem;
-    }
+  .speakers_container {
+    padding-inline: 0rem;
+  }
 
-    .speakers_card_nombre {
-        font-size: var(--subtitulo);
-        text-align: center;
-    }
-    
-    .speakers_card_desc {
-        text-align: center;
-    }
+  .speakers_card_info {
+    padding-inline: 2rem;
+  }
 
-    .speakers_card_subcards_container {
-        width: 100%;
-        flex-direction: column;
-        align-items: flex-start;
-        /* padding-left: 2rem; */
-    }
+  .speakers_card_nombre {
+    font-size: var(--subtitulo);
+    text-align: center;
+  }
 
-    .speakers_card_subcard {
-        width: 100%;
-    }
+  .speakers_card_desc {
+    text-align: center;
+  }
 
-    .speakers_card_subcard {
-        align-items: flex-start;
-    }
+  .speakers_card_subcards_container {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding-left: 2rem; */
+  }
 
-    .speakers_card_subcard_desc {
-        text-align: start;
-    }
+  .speakers_card_subcard {
+    width: 100%;
+  }
 
-    .speakers_card_subcard_img {
-        width: 10%;
-    }
+  .speakers_card_subcard {
+    align-items: flex-start;
+  }
 
-    
+  .speakers_card_subcard_desc {
+    text-align: start;
+  }
+
+  .speakers_card_subcard_img {
+    width: 10%;
+  }
+
+
 }
