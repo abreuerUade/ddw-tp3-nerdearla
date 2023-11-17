@@ -771,10 +771,6 @@ header {
 }
 
 
-/* CONTACTO */
-/* CONTACTO */
-/* CONTACTO */
-
 .contacto {
     --col_width: 50%;
     padding-block-end: 0rem;
@@ -793,17 +789,101 @@ header {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
-    /* gap: ; */
-    
+    gap: 3rem;
+    position: relative;
+    padding-top: 5rem;
+    padding-right: 5rem;
 }
+
+.contacto_info .contacto_info_titulo {
+    font-size: var(--titulo);
+    font-weight: var(--bold);
+    color: var(--texto);
+    text-align: start;
+}
+
+.contacto_info .contacto_info_descripcion {
+    font-size: var(--sub);
+    font-weight: var(--regular);
+    color: var(--texto);
+    text-align: start;
+}
+
+.contacto_info::before {
+    content: '';
+    position: absolute;
+    width: 30%;
+    aspect-ratio: 3.56;
+    background-image: url(../images/arrow_contacto.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 10rem;
+    bottom: 6rem;
+}
+
 
 .contacto_form {
     width: var(--col_width);
     height: 100%;
     display: flex;
-    
+    justify-content: center;
+    align-items: center;
+    padding-inline: 5rem;
+}
+
+.contacto_form form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-top: 5rem;
+    background-color: var(--bg);
+}
+
+.contacto_form form :is(.nombre, .email, .numero, .busqueda) {
+    width: 80%;
+    height: 3rem;
+    padding: 1rem;
+    background-color: var(--bg);
+    outline: none;
+    position: relative;
+}
+
+.contacto_form form .nombre:nth-child(n of .nombre) {
+    border: 3px solid var(--amarilloNerd);
+}
+
+.contacto_form form .nombre:nth-child(n of .nombre)::placeholder {
+    color: var(--amarilloNerd);
+}
+
+.contacto_form form .email:nth-child(n of .email) {
+    border: 3px solid var(--azulNerd);
+}
+
+.contacto_form form .email:nth-child(n of .email)::placeholder {
+    color: var(--azulNerd);
+}
+
+.contacto_form form .numero:nth-child(n of .numero) {
+    border: 3px solid var(--verdeNerd);
+}
+
+.contacto_form form .numero:nth-child(n of .numero)::placeholder {
+    color: var(--verdeNerd);
+}
+
+.contacto_form form .busqueda:nth-child(n of .busqueda) {
+    border: 3px solid var(--rojoNerd);
+}
+
+.contacto_form form .busqueda:nth-child(n of .busqueda)::placeholder {
+    color: var(--rojoNerd);
 }
 
 
@@ -1232,16 +1312,7 @@ footer {
     display: none;
   }
 
-  /* PAGE CONTACTO */
-  .conectate-contenido-texto,
-  .conectate-contenido-formulario {
-    width: 100%;
-  }
-
-
-  .conectate-contenido-texto {
-    text-align: center;
-  }
+  
 }
 
 @media (max-width: 425px) {
