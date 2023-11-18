@@ -766,7 +766,61 @@ header {
     object-fit: fill;
 }
 
+.mision_cards_container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
 
+.mision_card {
+    --card_info_width: 50%;
+    display: flex;
+    width: 100%;
+    height: auto;
+    gap: 2rem;
+}
+
+.mision_card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.mision_card_info {
+    width: var(--card_info_width);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.mision_card_img {
+    width: calc(100% - var(--card_info_width));
+    height: auto;
+}
+
+.mision_card_img-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mision_card_info-titulo {
+    font-size: var(--titulo);
+    font-weight: var(--bold);
+    color: var(--texto);
+    text-align: start;
+}
+
+.mision_card_info-parrafo {
+    font-size: var(--sub);
+    font-weight: var(--regular);
+    color: var(--texto);
+    text-align: start;
+}
 
 
 
