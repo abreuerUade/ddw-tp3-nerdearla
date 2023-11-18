@@ -728,7 +728,15 @@ header {
 /* NOSOTROS */
 /* NOSOTROS */
 
-/* Estilo para la sección de nostros */
+.nosotros {
+    padding-block-end: 0rem;
+    width: 100%;
+    height: 1000px;
+    background-color: var(--azulNerd);
+    padding-inline: 4rem;
+}
+
+
 
 
 
