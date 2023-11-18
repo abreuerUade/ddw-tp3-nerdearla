@@ -736,6 +736,14 @@ header {
     padding-inline: 6rem;
 }
 
+.quienes_somos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  gap: 2rem;
+}
+
 .nosotros_intro {
     width: 100%;
     height: auto;
@@ -784,6 +792,18 @@ header {
     gap: 2rem;
     padding: 4rem;
     background-color: #ececec;
+}
+
+.quienes_somos_card {
+  width: 100%;
+  height: auto;
+  gap: 2rem;
+  padding: 4rem;
+  background-color: #ececec;
+}
+
+.quienes_somos_card h2{
+  margin-bottom: 1rem;
 }
 
 .mision_card:nth-child(even) {

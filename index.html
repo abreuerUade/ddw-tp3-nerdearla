@@ -1,359 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <script defer src="./js/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Nerdearla</title>
-  </head>
-  <body>
 
-    <!-- HEADER -->
-    <header>
-      <div class="container_header">
-        <!-- LOGO -->
-        <div class="header_logo">
-          <a class="header_logo-link" href="#!">
-            <img
-              class="header_logo-img"
-              src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1698626125/DDW%20TPO%20FINAL/ab6761610000e5ebc68b8bc018158d66fd489877_stiipq-removebg-preview_p6swfd.png"
-              alt="Nerdearla Logo"
-            />
-          </a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script defer src="./js/script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Nerdearla</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container_header">
+      <!-- LOGO -->
+      <div class="header_logo">
+        <a class="header_logo-link" href="#!">
+          <img class="header_logo-img"
+            src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1698626125/DDW%20TPO%20FINAL/ab6761610000e5ebc68b8bc018158d66fd489877_stiipq-removebg-preview_p6swfd.png"
+            alt="Nerdearla Logo" />
+        </a>
+      </div>
+
+      <!-- NAV -->
+      <div class="container_nav">
+        <!-- MENU HAMBURGUESA -->
+        <button class="menu-button" aria-controls="primary-navigation" aria-expanded="false" aria-label="menu">
+          <svg class="menu" viewBox="0 0 100 100" width="25">
+            <rect class="line line_top" width="80" height="10" x="10" y="30" rx="5"></rect>
+            <rect class="line line_middle" width="80" height="10" x="10" y="50" rx="5"></rect>
+            <rect class="line line_bottom" width="80" height="10" x="10" y="70" rx="5"></rect>
+          </svg>
+        </button>
 
         <!-- NAV -->
-        <div class="container_nav">
-          <!-- MENU HAMBURGUESA -->
-          <button
-            class="menu-button"
-            aria-controls="primary-navigation"
-            aria-expanded="false"
-            aria-label="menu"
-          >
-            <svg class="menu" viewBox="0 0 100 100" width="25">
-              <rect
-                class="line line_top"
-                width="80"
-                height="10"
-                x="10"
-                y="30"
-                rx="5"
-              ></rect>
-              <rect
-                class="line line_middle"
-                width="80"
-                height="10"
-                x="10"
-                y="50"
-                rx="5"
-              ></rect>
-              <rect
-                class="line line_bottom"
-                width="80"
-                height="10"
-                x="10"
-                y="70"
-                rx="5"
-              ></rect>
-            </svg>
-          </button>
+        <nav class="nav">
+          <ul class="primary-navigation" id="primary-navigation" data-visible="false">
+            <li class="nav_item">
+              <a href="#!" class="nav_link">Inicio</a>
+            </li>
+            <li class="nav_item">
+              <a href="pages/nosotros.html" class="nav_link">Nosotros</a>
+            </li>
+            <li class="nav_item">
+              <a href="pages/charlas.html" class="nav_link">Charlas</a>
+            </li>
+            <li class="nav_item">
+              <a href="pages/contacto.html" class="nav_link">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
 
-          <!-- NAV -->
-          <nav class="nav">
-            <ul
-              class="primary-navigation"
-              id="primary-navigation"
-              data-visible="false"
-            >
-              <li class="nav_item">
-                <a href="#!" class="nav_link">Inicio</a>
-              </li>
-              <li class="nav_item">
-                <a href="pages/nosotros.html" class="nav_link">Nosotros</a>
-              </li>
-              <li class="nav_item">
-                <a href="pages/charlas.html" class="nav_link">Charlas</a>
-              </li>
-              <li class="nav_item">
-                <a href="pages/contacto.html" class="nav_link">Contacto</a>
-              </li>
-            </ul>
-          </nav>
+  <!-- MAIN -->
+  <main>
+    <section class="hero">
+      <div class="hero_info-container container_lg">
+        <h1>Nerdearla</h1>
+        <h2 class="hero_subtitle">Charlas IT para curiosos y apasionados</h2>
+        <div class="hero_botones">
+          <a class="boton boton_blanco" href="#!">Contactanos</a>
+          <a class="boton boton_amarillo" href="#!">
+            Sumate
+            <svg class="right_arrow" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.1563 2L21.7188 10.896L12.1563 19.792M20.3906 10.896H1" stroke="#130E01" stroke-width="2"
+                stroke-miterlimit="10" stroke-linecap="square" />
+            </svg>
+          </a>
         </div>
       </div>
-    </header>
+      <div class="hero_info-container_2">
+        <img class="hero_info-container_2-img" src="images/image_bg_hero.png" alt="Nerdearla imagen de fondo">
+      </div>
+    </section>
 
-    <!-- MAIN -->
-    <main>
-        <section class="hero">
-            <div class="hero_info-container container_lg">
-                <h1>Nerdearla</h1>
-                <h2 class="hero_subtitle">Charlas IT para curiosos y apasionados</h2>
-                <div class="hero_botones">
-                    <a class="boton boton_blanco" href="#!">Contactanos</a>
-                    <a class="boton boton_amarillo" href="#!">
-                        Sumate
-                        <svg class="right_arrow" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.1563 2L21.7188 10.896L12.1563 19.792M20.3906 10.896H1" stroke="#130E01" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="hero_info-container_2">
-                <img class="hero_info-container_2-img" src="images/image_bg_hero.png" alt="Nerdearla imagen de fondo">
-            </div>
-        </section>
+    <section class="sponsors">
+      <div class="container sponsors_container">
+        <ul class="sponsors_list">
+          <li class="sponsors_list_item">
+            <a class="sponsors_list_link" href="#!">
+              <img class="sponsors_list_img" src="images/bbva.png" alt="BBVA">
+            </a>
+          </li>
+          <li class="sponsors_list_item">
+            <a class="sponsors_list_link" href="#!">
+              <img class="sponsors_list_img" src="images/microsoft.png" alt="Microsoft">
+            </a>
+          </li>
+          <li class="sponsors_list_item">
+            <a class="sponsors_list_link" href="#!">
+              <img class="sponsors_list_img" src="images/NaranjaX.png" alt="Naranja X">
+            </a>
+          </li>
+          <li class="sponsors_list_item">
+            <a class="sponsors_list_link" href="#!">
+              <img class="sponsors_list_img" src="images/Accenture.png" alt="Accenture">
+            </a>
+          </li>
+          <li class="sponsors_list_item">
+            <a class="sponsors_list_link" href="#!">
+              <img class="sponsors_list_img" src="images/Clarin.png" alt="Clarín">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
-        <section class="sponsors">
-            <div class="container sponsors_container">
-                <ul class="sponsors_list">
-                    <li class="sponsors_list_item">
-                        <a class="sponsors_list_link" href="#!">
-                            <img class="sponsors_list_img" src="images/bbva.png" alt="BBVA">
-                        </a>
-                    </li>
-                    <li class="sponsors_list_item">
-                        <a class="sponsors_list_link" href="#!">
-                            <img class="sponsors_list_img" src="images/microsoft.png" alt="Microsoft">
-                        </a>
-                    </li>
-                    <li class="sponsors_list_item">
-                        <a class="sponsors_list_link" href="#!">
-                            <img class="sponsors_list_img" src="images/NaranjaX.png" alt="Naranja X">
-                        </a>
-                    </li>
-                    <li class="sponsors_list_item">
-                        <a class="sponsors_list_link" href="#!">
-                            <img class="sponsors_list_img" src="images/Accenture.png" alt="Accenture">
-                        </a>
-                    </li>
-                    <li class="sponsors_list_item">
-                        <a class="sponsors_list_link" href="#!">
-                            <img class="sponsors_list_img" src="images/Clarin.png" alt="Clarín">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="vivi_nerdearla">
-            <div class="container_lg vivi_nerdearla_container">
-                <div class="vivi_nerdearla_col">
-                    <img class="vivi_nerdearla_img" src="images/vivi_nerdearla.png" alt="Speaker de nerdearla">
-                </div>
-                <div class="vivi_nerdearla_col">
-                    <div class="vivi_nerdearla_titulo">
-                        <h2 class="vivi_nerdearla_titulo-texto">VIVI NERDEARLA</h2>
-                    </div>
-                    <div class="vivi_nerdearla_desc">
-                        <p class="vivi_nerdearla_desc-texto">¡Prepárate! Nerdearla presenta su evento anual de charlas IT. Únete a nosotros en Konex para explorar juntos el futuro tecnológico. ¡Reserva tu lugar ahora y no te pierdas esta experiencia única!</p>
-                    </div>
-                    <div class="vivi_nerdearla_botones">
-                        <a href="#!" class="boton boton_amarillo">Registrate ya!</a>
-                        <a href="#!" class="boton boton_amarillo">Más información</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="proximo_evento">
-            <div class="container proximo_evento_container">
-                <div class="proximo_evento_titulo">
-                    <h2 class="proximo_evento_titulo-texto">PRÓXIMO EVENTO</h2>
-                </div>
-                <div class="proximo_evento_card">
-                    <div class="proximo_evento_card_img">
-                        <img class="proximo_evento_card_img-img" src="images/card_proximo_evento.png" alt="Proximo evento">
-                    </div>
-                    <div class="proximo_evento_card_info">
-                        <h3 class="proximo_evento_card_titulo">10ma edición,Sep 26–30</h3>
-                        <p class="proximo_evento_card_desc">El próximo evento tendrá lugar en Ciudad Cultural Konex, el espacio situado en el mítico barrio del Abasto de la ciudad de Buenos Aires.</p>
-                        <div class="proximo_evento_card_ubicacion">
-                            <img class="proximo_evento_card_ubicacion-img" src="images/location.png" alt="Icono de ubicacion">
-                            <p class="proximo_evento_card_ubicacion-texto">Sarmiento 3131, C1196 CABA</p>
-                        </div>
-                        <div class="proximo_evento_card_fecha">
-                            <img class="proximo_evento_card_fecha-img" src="images/calendar.png" alt="Icono de calendario">
-                            <p class="proximo_evento_card_fecha-texto">26 y 27 Online - 28 al 30 en el Konex</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="proximo_evento_tickets">
-                    <div class="proximo_evento_tickets_info">
-                        <h3 class="proximo_evento_tickets_titulo">YA ESTAN DISPONIBLES TUS ENTRADAS GRATUITAS</h3>
-                        <a href="#!" class="boton boton_rojo">Reservá tu entrada</a>
-                        <p class="proximo_evento_tickets_llegar">Fijate como llegar al <span class="proximo_evento_tickets_llegar-span">KONEX desde tu ubicación</span></p>
-                    </div>
-                    <div class="proximo_evento_tickets_img">
-                        <!-- <img class="proximo_evento_tickets_img-img" src="images/mapa_konex.png" alt="Mapa conex"> -->
-                        <iframe class="proximo_evento_tickets_img-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6567.8095402857125!2d-58.42006140642094!3d-34.60656949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb577e34f9e55%3A0x6dd823092cb367d9!2sCiudad%20Cultural%20Konex!5e0!3m2!1sen!2sar!4v1699493004044!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>                    
-                </div>
-            </div>
-        </section>
-
-        <section class="speakers">
-            <div class="container_lg speakers_container">
-                <div class="speakers_titulo">
-                    <h2 class="speakers_titulo-texto">SPEAKERS</h2>
-                </div>
-                <div class="speakers_container_cards">
-                    <div class="speakers_card">
-                        <div class="speakers_card_info">
-                            <h3 class="speakers_card_nombre">Julieta Ulanovsky</h3>
-                            <p class="speakers_card_desc">Experimentada ingeniera de software, experta en programación orientada a objetos, conferencista internacional y autora de renombre en el campo de la programación.</p>
-                            <div class="speakers_card_subcards_container">
-                                <div class="speakers_card_subcard">
-                                    <img class="speakers_card_subcard_img" src="images/code_icon.png" alt="Icono de code snippets">
-                                    <h4 class="speakers_card_subcard_titulo">space proof code</h4>
-                                    <p class="speakers_card_subcard_desc">La charla explorará "Space-Proof Code" para lograr software confiable en misiones espaciales.</p>
-                                </div>
-                                <div class="speakers_card_subcard">
-                                    <img class="speakers_card_subcard_img" src="images/debugging_icon.png" alt="Icono de debugging">
-                                    <h4 class="speakers_card_subcard_titulo">Legibilidad</h4>
-                                    <p class="speakers_card_subcard_desc">Resaltará la claridad en programación y técnicas para código más limpio y comprensible.</p>
-                                </div>
-                            </div>
-                            <a class="boton boton_azul" href="#!">
-                                Ver más
-                                <svg class="right_arrow" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.1562 2L21.7188 10.896L12.1562 19.792M20.3906 10.896H1" stroke="#F5F5F5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="speakers_card_img">
-                            <img class="speakers_card_img-img" src="images/speaker_index.png" alt="Speaker Julieta Ulanovsky">
-                        </div>
-                    </div>
-                    <div class="speakers_card">
-                        <div class="speakers_card_info">
-                            <h3 class="speakers_card_nombre">Emma Schneider</h3>
-                            <p class="speakers_card_desc">Emma Schneider es una científica de datos con experiencia en inteligencia artificial y análisis de datos. Su investigación en el campo de la inteligencia artificial la ha convertido en una figura destacada en la comunidad científica.</p>
-                            <div class="speakers_card_subcards_container">
-                                <div class="speakers_card_subcard">
-                                    <img class="speakers_card_subcard_img" src="images/code_icon.png" alt="Icono de code snippets">
-                                    <h4 class="speakers_card_subcard_titulo">Futuro de la IA</h4>
-                                    <p class="speakers_card_subcard_desc">Emma explora las últimas tendencias en inteligencia artificial y su impacto en diferentes industrias, incluyendo desafíos éticos.</p>
-                                </div>
-                                <div class="speakers_card_subcard">
-                                    <img class="speakers_card_subcard_img" src="images/debugging_icon.png" alt="Icono de debugging">
-                                    <h4 class="speakers_card_subcard_titulo">Datos en Medicina</h4>
-                                    <p class="speakers_card_subcard_desc">Emma destaca el uso de datos en la atención médica, enfocándose en tratamientos personalizados.</p>
-                                </div>
-                            </div>
-                            <a class="boton boton_azul" href="#!">
-                                Ver más
-                                <svg class="right_arrow" width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M12.1562 2L21.7188 10.896L12.1562 19.792M20.3906 10.896H1" stroke="#F5F5F5" stroke-width="2" stroke-miterlimit="10" stroke-linecap="square"/>
-                                </svg>
-                            </a>
-                        </div>
-                        <div class="speakers_card_img">
-                            <img class="speakers_card_img-img" src="images/speaker_index_2.png" alt="Speaker Julieta Ulanovsky">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-
-
-
-
-
-
-
-
-    <footer>
-      <div class="container container_footer">
-        <div class="col_footer footer-top">
-          <div class="col_footer_top footer-logo">
-            <img
-              src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1698626125/DDW%20TPO%20FINAL/ab6761610000e5ebc68b8bc018158d66fd489877_stiipq-removebg-preview_p6swfd.png"
-              alt=""
-            />
-            <h2>Nerdearla</h2>
+    <section class="vivi_nerdearla">
+      <div class="container_lg vivi_nerdearla_container">
+        <div class="vivi_nerdearla_col">
+          <img class="vivi_nerdearla_img" src="images/vivi_nerdearla.png" alt="Speaker de nerdearla">
+        </div>
+        <div class="vivi_nerdearla_col">
+          <div class="vivi_nerdearla_titulo">
+            <h2 class="vivi_nerdearla_titulo-texto">VIVI NERDEARLA</h2>
           </div>
-          <div class="col_footer_top footer-links">
-            <ul>
-              <li class="footer-links-titulo">Recursos</li>
-              <li><a href="#">Sponsors</a></li>
-              <li><a href="#">Stands Virtuales</a></li>
-              <li><a href="#">Búsquedas Laborales</a></li>
-              <li><a href="#">Comunidad</a></li>
-            </ul>
+          <div class="vivi_nerdearla_desc">
+            <p class="vivi_nerdearla_desc-texto">¡Prepárate! Nerdearla presenta su evento anual de charlas IT. Únete a
+              nosotros en Konex para explorar juntos el futuro tecnológico. ¡Reserva tu lugar ahora y no te pierdas esta
+              experiencia única!</p>
           </div>
-          <div class="col_footer_top footer-links">
-            <ul>
-              <li class="footer-links-titulo">Legales</li>
-              <li><a href="#">Términos</a></li>
-              <li><a href="#">Preguntas Frecuentes</a></li>
-              <li><a href="#">Privacidad</a></li>
-            </ul>
+          <div class="vivi_nerdearla_botones">
+            <a href="#!" class="boton boton_amarillo">Registrate ya!</a>
+            <a href="#!" class="boton boton_amarillo">Más información</a>
           </div>
         </div>
-        <div class="col_footer footer-mid">
-          <div class="footer_form_titulo">
-            <h3>¡Suscribite a nuestro Newsletter!</h3>
-          </div>
-          <form class="footer_form">
-            <input
-              type="email"
-              name="subscription"
-              placeholder="john_doe@mail.com"
-            />
-            <button class="boton boton_amarillo" type="submit">Registrate</button>
-          </form>
+      </div>
+    </section>
+
+    <section class="proximo_evento">
+      <div class="container proximo_evento_container">
+        <div class="proximo_evento_titulo">
+          <h2 class="proximo_evento_titulo-texto">PRÓXIMO EVENTO</h2>
         </div>
-        <div class="col_footer footer-bottom">
-          <p>&reg; 2023 Nerdearla</p>
+        <div class="proximo_evento_card">
+          <div class="proximo_evento_card_img">
+            <img class="proximo_evento_card_img-img" src="images/card_proximo_evento.png" alt="Proximo evento">
+          </div>
+          <div class="proximo_evento_card_info">
+            <h3 class="proximo_evento_card_titulo">10ma edición,Sep 26–30</h3>
+            <p class="proximo_evento_card_desc">El próximo evento tendrá lugar en Ciudad Cultural Konex, el espacio
+              situado en el mítico barrio del Abasto de la ciudad de Buenos Aires.</p>
+            <div class="proximo_evento_card_ubicacion">
+              <img class="proximo_evento_card_ubicacion-img" src="images/location.png" alt="Icono de ubicacion">
+              <p class="proximo_evento_card_ubicacion-texto">Sarmiento 3131, C1196 CABA</p>
+            </div>
+            <div class="proximo_evento_card_fecha">
+              <img class="proximo_evento_card_fecha-img" src="images/calendar.png" alt="Icono de calendario">
+              <p class="proximo_evento_card_fecha-texto">26 y 27 Online - 28 al 30 en el Konex</p>
+            </div>
+          </div>
+        </div>
+        <div class="proximo_evento_tickets">
+          <div class="proximo_evento_tickets_info">
+            <h3 class="proximo_evento_tickets_titulo">YA ESTAN DISPONIBLES TUS ENTRADAS GRATUITAS</h3>
+            <a href="#!" class="boton boton_rojo">Reservá tu entrada</a>
+            <p class="proximo_evento_tickets_llegar">Fijate como llegar al <span
+                class="proximo_evento_tickets_llegar-span">KONEX desde tu ubicación</span></p>
+          </div>
+          <div class="proximo_evento_tickets_img">
+            <!-- <img class="proximo_evento_tickets_img-img" src="images/mapa_konex.png" alt="Mapa conex"> -->
+            <iframe class="proximo_evento_tickets_img-img"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6567.8095402857125!2d-58.42006140642094!3d-34.60656949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb577e34f9e55%3A0x6dd823092cb367d9!2sCiudad%20Cultural%20Konex!5e0!3m2!1sen!2sar!4v1699493004044!5m2!1sen!2sar"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="speakers">
+      <div class="container_lg speakers_container">
+        <div class="speakers_titulo">
+          <h2 class="speakers_titulo-texto">SPEAKERS</h2>
+        </div>
+        <div class="speakers_container_cards">
+          <div class="speakers_card">
+            <div class="speakers_card_info">
+              <h3 class="speakers_card_nombre">Julieta Ulanovsky</h3>
+              <p class="speakers_card_desc">Experimentada ingeniera de software, experta en programación orientada a
+                objetos, conferencista internacional y autora de renombre en el campo de la programación.</p>
+              <div class="speakers_card_subcards_container">
+                <div class="speakers_card_subcard">
+                  <img class="speakers_card_subcard_img" src="images/code_icon.png" alt="Icono de code snippets">
+                  <h4 class="speakers_card_subcard_titulo">space proof code</h4>
+                  <p class="speakers_card_subcard_desc">La charla explorará "Space-Proof Code" para lograr software
+                    confiable en misiones espaciales.</p>
+                </div>
+                <div class="speakers_card_subcard">
+                  <img class="speakers_card_subcard_img" src="images/debugging_icon.png" alt="Icono de debugging">
+                  <h4 class="speakers_card_subcard_titulo">Legibilidad</h4>
+                  <p class="speakers_card_subcard_desc">Resaltará la claridad en programación y técnicas para código más
+                    limpio y comprensible.</p>
+                </div>
+              </div>
+              <a class="boton boton_azul" href="#!">
+                Ver más
+                <svg class="right_arrow" width="24" height="22" viewBox="0 0 24 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.1562 2L21.7188 10.896L12.1562 19.792M20.3906 10.896H1" stroke="#F5F5F5" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linecap="square" />
+                </svg>
+              </a>
+            </div>
+            <div class="speakers_card_img">
+              <img class="speakers_card_img-img" src="images/speaker_index.png" alt="Speaker Julieta Ulanovsky">
+            </div>
+          </div>
+          <div class="speakers_card">
+            <div class="speakers_card_info">
+              <h3 class="speakers_card_nombre">Emma Schneider</h3>
+              <p class="speakers_card_desc">Emma Schneider es una científica de datos con experiencia en inteligencia
+                artificial y análisis de datos. Su investigación en el campo de la inteligencia artificial la ha
+                convertido en una figura destacada en la comunidad científica.</p>
+              <div class="speakers_card_subcards_container">
+                <div class="speakers_card_subcard">
+                  <img class="speakers_card_subcard_img" src="images/code_icon.png" alt="Icono de code snippets">
+                  <h4 class="speakers_card_subcard_titulo">Futuro de la IA</h4>
+                  <p class="speakers_card_subcard_desc">Emma explora las últimas tendencias en inteligencia artificial y
+                    su impacto en diferentes industrias, incluyendo desafíos éticos.</p>
+                </div>
+                <div class="speakers_card_subcard">
+                  <img class="speakers_card_subcard_img" src="images/debugging_icon.png" alt="Icono de debugging">
+                  <h4 class="speakers_card_subcard_titulo">Datos en Medicina</h4>
+                  <p class="speakers_card_subcard_desc">Emma destaca el uso de datos en la atención médica, enfocándose
+                    en tratamientos personalizados.</p>
+                </div>
+              </div>
+              <a class="boton boton_azul" href="#!">
+                Ver más
+                <svg class="right_arrow" width="24" height="22" viewBox="0 0 24 22" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.1562 2L21.7188 10.896L12.1562 19.792M20.3906 10.896H1" stroke="#F5F5F5" stroke-width="2"
+                    stroke-miterlimit="10" stroke-linecap="square" />
+                </svg>
+              </a>
+            </div>
+            <div class="speakers_card_img">
+              <img class="speakers_card_img-img" src="images/speaker_index_2.png" alt="Speaker Julieta Ulanovsky">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="container container_footer">
+      <div class="col_footer footer-top">
+        <div class="col_footer_top footer-logo">
+          <img
+            src="https://res.cloudinary.com/dhjoeubqp/image/upload/v1698626125/DDW%20TPO%20FINAL/ab6761610000e5ebc68b8bc018158d66fd489877_stiipq-removebg-preview_p6swfd.png"
+            alt="" />
+          <h2>Nerdearla</h2>
+        </div>
+        <div class="col_footer_top footer-links">
           <ul>
-            <li>
-              <a
-                href="https://www.facebook.com/nerdearla"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="red_social_1 fa-brands fa-facebook"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/nerdearla"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="red_social_2 fa-brands fa-x-twitter"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/nerdear_la/"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="red_social_3 fa-brands fa-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/@nerdearla"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="red_social_4 fa-brands fa-youtube"></i
-              ></a>
-            </li>
+            <li class="footer-links-titulo">Recursos</li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">Stands Virtuales</a></li>
+            <li><a href="#">Búsquedas Laborales</a></li>
+            <li><a href="#">Comunidad</a></li>
+          </ul>
+        </div>
+        <div class="col_footer_top footer-links">
+          <ul>
+            <li class="footer-links-titulo">Legales</li>
+            <li><a href="#">Términos</a></li>
+            <li><a href="#">Preguntas Frecuentes</a></li>
+            <li><a href="#">Privacidad</a></li>
           </ul>
         </div>
       </div>
-    </footer>
-  </body>
+      <div class="col_footer footer-mid">
+        <div class="footer_form_titulo">
+          <h3>¡Suscribite a nuestro Newsletter!</h3>
+        </div>
+        <form class="footer_form">
+          <input type="email" name="subscription" placeholder="john_doe@mail.com" />
+          <button class="boton boton_amarillo" type="submit">Registrate</button>
+        </form>
+      </div>
+      <div class="col_footer footer-bottom">
+        <p>&reg; 2023 Nerdearla</p>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/nerdearla" target="_blank" rel="noopener noreferrer"><i
+                class="red_social_1 fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/nerdearla" target="_blank" rel="noopener noreferrer"><i
+                class="red_social_2 fa-brands fa-x-twitter"></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/nerdear_la/" target="_blank" rel="noopener noreferrer"><i
+                class="red_social_3 fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/@nerdearla" target="_blank" rel="noopener noreferrer"><i
+                class="red_social_4 fa-brands fa-youtube"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
