@@ -774,6 +774,12 @@ header {
     object-fit: fill;
 }
 
+.mision {
+    width: 100%;
+    height: auto;
+    margin-block-end: 6rem;
+}
+
 .mision_cards_container {
     width: 100%;
     height: auto;
