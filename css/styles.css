@@ -890,7 +890,177 @@ header {
 .charlas_hero_contenido h1 {
   font-size: 100px;
 }
+/* ================= UTILITY ================ */
 
+.fs-xs {
+  font-size: var(--small);
+}
+.fs-small {
+  font-size: var(--sub);
+}
+.fs-medium {
+  font-size: var(--parrafo);
+}
+.fs-large {
+  font-size: var(--subtitulo);
+}
+.fs-xl {
+  font-size: var(--titulo)
+}
+.fs-xxl {
+  font-size: var(--h1);
+}
+
+.fw-regular {
+  font-weight: var(--regular);
+}
+.fw-medium {
+  font-weight: var(--medium);
+}
+.fw-semiBold{
+  font-weight: var(--semi_bold);
+} 
+.fw-bold {
+  font-weight: var(--bold);
+}
+
+/* .txt-sh{
+  text-shadow: 2px 3px 4px rgba(66, 68, 90, 0.45);
+} */
+
+.transform-up {
+  text-transform: uppercase;
+}
+.transform-cap {
+  text-transform: capitalize;
+}
+
+.clr-data{
+  background-color: var(--amarilloNerd);
+}
+.clr-infra{
+  background-color: var(--azulNerd);
+}
+.clr-sec{
+  background-color: #130E01;
+}
+.clr-test{
+  background-color: var(--rojoNerd);
+}
+.txt-sub{
+  color: #F5F5F5;
+}
+/* ============================================= */
+
+/* ================= CHARLAS ================ */
+
+.track__wrapper{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+
+  margin: 3em 0;
+}
+.track__titleBlock{
+  padding: 2em;
+  width: 100%;
+  
+  /* background-color: var(--amarilloNerd); */
+  color: var(--bg);
+
+  text-align: center;
+}
+.track__textContent{
+  padding: 1em;
+
+  background-color: #D9D9D9;
+  color: var(--texto);
+
+  text-align: center;
+}
+
+/* --------------- speakerCard -------------- */
+
+.track__speakerCard{
+  min-width: 270px;
+
+  /* outline: solid black 1px; */
+  /* background-color: var(--amarilloNerd); */
+
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+  padding: 2em 1.5em;
+  -webkit-box-shadow: 8px 12px 12px -11px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 12px 12px -11px rgba(66, 68, 90, 1);
+  box-shadow: 8px 12px 12px -11px rgba(66, 68, 90, 1);
+}
+.speakerCard__img{
+  /* min-width: 220px;
+  max-width: 280px; */
+
+  /* min-width: 70%;
+  max-width: 75%; */
+  width: 95%;
+  
+  height: 210px;
+
+  outline: solid black 1px;
+  background-color: var(--bg);
+
+
+  border-radius: 10px;
+
+  padding: .2em; /*espacio img-fondo*/
+  /* margin: 0 em; */
+
+  -webkit-box-shadow: inset 8px 12px 12px -11px rgba(66, 68, 90, 1);
+  -moz-box-shadow: inset 8px 12px 12px -11px rgba(66, 68, 90, 1);
+  box-shadow: inset 8px 12px 12px -11px rgba(66, 68, 90, 1);
+}
+.speakerCard__title{
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+
+  margin-bottom: 1em;
+}
+
+/* -------------- SLIDER ---------------------- */
+.slider {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+
+  padding: 2em;
+
+  overflow: hidden;
+}
+.slide {
+  animation: animate 25s linear infinite;
+  animation-iteration-count: infinite;
+  /* width: 100%; */
+}
+.slider:hover .slide {
+  animation-play-state: paused;
+}
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* --------------------------------------------- */
+/* ============================================= */
 
 
 /* CONTACTO */
@@ -1826,4 +1996,9 @@ footer {
   }
 
 
+}
+@media (min-width: 780px){
+  .track__speakerCard{
+    min-width: 335px;
+  }
 }
