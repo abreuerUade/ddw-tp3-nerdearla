@@ -1005,6 +1005,10 @@ header {
 
   /* min-width: 70%;
   max-width: 75%; */
+  background-image: url(../images/jorgelukowsky.jpg);
+  background-size: cover;
+  background-position: center;
+
   width: 95%;
   
   height: 210px;
